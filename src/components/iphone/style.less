@@ -1,0 +1,311 @@
+@import '~style/helpers';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	//background-image: url('../../assets/backgrounds/clear-iphone.jpg');
+	background-color: #fff;
+	color: #fff;
+	width: 414px;
+	height: 736px;
+	text-align: center;
+	//padding-top: 80px;
+	margin: 0 auto;
+}
+
+.swoop{
+	border-bottom-left-radius:80% 70%;
+	border-bottom-right-radius:80% 70%;
+	padding-bottom: 40px;
+    color: white;
+}
+
+.settings{
+	background-color: #fff;
+	text-align: left;
+	padding:10px;
+    height: 40%;
+	border-bottom: 1px grey;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.settingsOptions {
+    width: 5%;
+    color: black;
+    font-family: Open Sans;
+    font-size: 12px;
+    display: inline-block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-left: 0.6em;
+    //padding: 0px;
+
+}
+/*
+.settings span{
+	color: blue;
+	text-align: right;
+	padding-left: 310px;
+}
+*/
+
+.settings:focus {outline:0;}
+
+#clothing{
+	color:blue;
+	padding-left: 333px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.details {
+	flex: 4;
+}
+.city {
+	flex: 1;
+	font-size: 1.7em;
+	font-weight: 400;
+}
+.conditions {
+	flex: 1;
+	font-size: 1.7em;
+	text-transform: capitalize;
+}
+.temperature {
+	flex: 2;
+	margin-top: 0;
+	font-size: 4.8em;
+	font-weight: 320;
+	letter-spacing: -4.5px;
+}
+
+/*****************/
+.hourBreakDownButtonContainer {
+	margin: 20px 125px 0px 125px
+}
+
+.hourBreakdownButton {
+	white-space: pre;
+	text-decoration: none;
+	font-size: 1em;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 25px;
+	background-color: inherit;
+	border-color: rgb(247, 199, 36);
+	font-family: arial;
+	font-size: 14px;
+}
+
+.hourBreakdownButtonInvisible {
+	background-color: transparent;
+	color: transparent;
+	outline: none;
+	text-decoration: none;
+	//cursor: pointer;
+	border:none;
+	margin-bottom: 8px;
+}
+/******************/
+
+.image {
+	flex:2;
+	width: 100px;
+	height: 100px;
+	color: black;
+    display: inline-block;
+}
+
+.todayOn {
+	height: 22px;
+	width: 112px;
+	border-radius: 11px 0 0 11px;
+	background-color: #FFFFFF;
+    outline: 0;
+    font-family: "Devanagari Sangam MN";
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.todayOff {
+    height: 22px;
+    width: 112px;
+    border-radius: 11px 0 0 11px;
+	opacity: 0.6;
+	background-color: #FFFFFF;
+    font-family: "Devanagari Sangam MN";
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.nextWeekOn {
+	height: 22px;
+	width: 112px;
+	border-radius: 0 11px 11px 0;
+	background-color: #FFFFFF;
+    outline: 0;
+    font-family: "Devanagari Sangam MN";
+    font-size: 12px;
+    line-height: 18px;
+   }
+
+.nextWeekOff {
+	height: 22px;
+	width: 112px;
+	opacity: 0.6;
+	background-color: #FFFFFF;
+	border-radius: 0 11px 11px 0;
+    font-family: "Devanagari Sangam MN";
+    font-size: 12px;
+    line-height: 18px;
+   }
+
+.tomorrowOn {
+	height: 22px;
+	width: 112px;
+	background-color: #FFFFFF;
+    font-family: "Devanagari Sangam MN";
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.tomorrowOff {
+	height: 22px;
+	width: 112px;
+	opacity: 0.6;
+	background-color: #FFFFFF;
+    font-family: "Devanagari Sangam MN";
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.backArrow {
+    height: 50%;
+    position: relative;
+    left: 22em;
+}
+
+
+/*********** Icon Styling ***********/
+.iconContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgb(95, 92, 95);
+
+}
+
+.iconContainer > .inside {
+  width: 70px;
+  margin-left: 26px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.iconHeader {
+    font-family: "Arial";
+	font-style: normal;
+	margin-bottom: 20px;
+	color: rgb(95, 92, 95);
+}
+
+.iconBackground {
+  	max-width:75px;
+	max-height: 75px;
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	padding: 12px 0px 0px 12px;
+	//background-color: rgb(106, 138, 197);
+	border-radius: 10px;
+
+}
+
+
+
+.iconImg {
+	float: top;
+	width: 50px;
+	height: 50px;
+}
+
+.iconCaption {
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 3px 0px 0px 5px;
+    width: 70px;
+    height: 47px;
+}
+
+.preferenceButtons{
+    width: 67px;
+    padding-left: 13%;
+    padding-bottom: 4%;
+    padding-top: 4%;
+	border-radius: 0;
+	position: relative;
+	left: 200px;
+	top: 12px;
+}
+
+.blueButton, .redButton, .lilacButton{
+	margin-bottom: 20px;
+	background-color: rgb(194, 194, 236);
+	border-radius: 16px;
+	width: 62px;
+	height: 34px;
+	font-family: sans-serif;
+	color: white;
+	font-size: medium;
+}
+
+
+.Visualpreference{
+	position:	relative;
+	top:	50px;
+	left: 	-89px;
+	font-family: sans-serif;
+}
+
+.pTable{
+	width:	100px;
+	height: 200px;
+}
+.pColorBox{
+	margin-bottom: 30px ;
+}
+/**************************************/
+
+/*********** Image Icon Styling (hour breakdown) ***********/
+.iconContainer > .imageInside {
+  width: 70px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.imageIconBackground {
+  	max-width:75px;
+	max-height: 75px;
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	padding: 12px 0px 0px 12px;
+	border-radius: 10px;
+
+}
+
+.imageIconImg {
+	float: top;
+	width: 80px;
+	height: 80px;
+	border-style: solid;
+	border-color: rgb(247, 199, 36);
+}
+/***********************************************************/
